@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-Paper</title>
+    <style>
+    body{
+        background-color: rgb(235, 225, 193);
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+    img{
+        height: 700px;
+        width: 1000px;
+        border-radius: 15px;
+        border: 5px solid #000;
+        margin-top: 75px;
+    }
+    #custom-button {
+  padding: 10px;
+  color: white;
+  background-color: #260f75;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#custom-button:hover {
+  background-color: #485385;
+}
+
+#custom-text {
+  margin-left: 10px;
+  font-family: sans-serif;
+  color: #aaa;
+}
+
+    </style>
+</head>
+<body>
+    <h1> Test-Paper</h1>
+   
+    <input type="file" id="real-file" hidden="hidden" />
+    <button type="button" id="custom-button">SUBMIT A FILE</button>
+    <span id="custom-text">No file chosen, yet.</span>
+<img src="paper.PNG">
+    <script type="text/javascript">
+    const realFileBtn = document.getElementById("real-file");
+const customBtn = document.getElementById("custom-button");
+const customTxt = document.getElementById("custom-text");
+
+customBtn.addEventListener("click", function() {
+  realFileBtn.click();
+});
+
+realFileBtn.addEventListener("change", function() {
+  if (realFileBtn.value) {
+    customTxt.innerHTML = realFileBtn.value.match(
+      /[\/\\]([\w\d\s\.\-\(\)]+)$/
+    )[1];
+  } else {
+    customTxt.innerHTML = "No file chosen, yet.";
+  }
+});
+
+    
+    </script>
+</body>
+</html>

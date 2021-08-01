@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="front-design.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <section>
+    <header>
+        <a href="#" class="logo">LearnZilla</a>
+    <ul>
+     <li><a href="#">Home</a></li> 
+     <li><a href="#">About</a></li>
+     <li><a href="#">Login</a></li>
+     <li><a href="#">Contact us</a></li> 
+     <li><span class="themeSwitch"></span></li> 
+    </ul>
+    </header>
+    <div class="content">
+        <div class="textbox">
+            <h2>Don't just Learn,<br>Start <span>Experiancing</span></h2>
+            <p>LearnZilla is user friendly web portal, which gathers educational material across other platforms compare it and provides you the user with best of the quality content available.
+Now a days we have seen students are inclining more towards online platforms for gaining education and skills, but often these platforms are full of distractions and gather private data of the user.
+We created a portal that is free from such nuisances and provides quality content.
+ </p>
+            <a href="#">Start Learning</a>
+        </div>
+        <div class="imgbox">
+            <img src="book30.png">
+        </div>
+    </div>
+    <ul class="sci">
+        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
+   
+    </section>
+
+    <script>
+        var themeSwitch = document.querySelector('.themeSwitch');
+        var body = document.querySelector('body');
+        themeSwitch.onclick = function(){
+            themeSwitch.classList.toggle('active');
+            body.classList.toggle('dark');
+        }
+    </script>
+    
+
+    
+</body>
+</html>

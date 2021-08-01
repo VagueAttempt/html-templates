@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+   }
+   body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(242, 244, 248);
+   }
+   header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .logo
+{
+    position: relative;
+    font-weight: 700;
+    font-size: 3em;
+    text-decoration: none;
+    color:#02021d;
+    font-family: 'Pattaya', sans-serif;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pattaya', sans-serif;
+}
+header ul li
+{
+    list-style: none;
+    display: flex;
+    margin-left: 35px;
+}
+header ul li a
+{
+    display: inline-block;
+    padding: 6px 15px;
+    color: var(--black);
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: #050505;
+    color: #fff;
+}
+
+   .main{
+         margin: 4%;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         align-content: center;
+         align-items: center;
+         justify-content: space-evenly;
+   }
+   
+   .video{
+        width: 30%;
+        min-width: 305px;
+        display: inline-block;
+        box-shadow: 2px 2px 20px black;
+        border-radius: 5px; 
+        margin: 2%;
+       }
+   
+   .image img{
+     width: 100%;
+     border-top-right-radius: 5px;
+     border-top-left-radius: 5px;
+    }
+   
+   .title{
+    
+     text-align: center;
+     padding: 10px;
+     
+    }
+   
+   h1{
+     font-size: 20px;
+    }
+   
+   .des{
+     padding: 3px;
+     text-align: center;
+     padding-top: 10px;
+     border-bottom-right-radius: 5px;
+     border-bottom-left-radius: 5px;
+   }
+   button{
+     margin-top: 40px;
+     margin-bottom: 10px;
+     background-color: white;
+     border: 1px solid black;
+     border-radius: 5px;
+     padding:10px;
+   }
+   button:hover{
+     background-color: rgba(0, 0, 0, 0.918);
+     color: white;
+     transition: .5s;
+     cursor: pointer;
+   }
+
+   @media  screen and  (max-width: 1440px){
+    .main{
+      margin: 10%;
+    }
+
+   }
+
+     
+   
